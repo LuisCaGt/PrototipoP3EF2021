@@ -424,10 +424,10 @@ public class Mantenimiento_PeriodoFiscal extends javax.swing.JInternalFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         try {
-            if ((new File("src\\main\\java\\Finanzas\\ayudas\\AyudaMantenimientoPeriodoFiscal.chm")).exists()) {
+            if ((new File("src\\ayuda\\AyudaMantenimientoPeriodoFiscal.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Finanzas\\ayudas\\AyudaMantenimientoPeriodoFiscal.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\ayuda\\AyudaMantenimientoPeriodoFiscal.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");
