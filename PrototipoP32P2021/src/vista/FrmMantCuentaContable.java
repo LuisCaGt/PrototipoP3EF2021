@@ -362,10 +362,10 @@ public class FrmMantCuentaContable extends javax.swing.JInternalFrame {
 
     private void BtnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAyudaActionPerformed
         try {
-            if ((new File("src\\main\\java\\Finanzas\\ayudas\\Ayuda_Mantenimiento_Clasificacion_Cuenta.chm")).exists()) {
+            if ((new File("src\\ayuda\\Ayuda_Mantenimiento_Clasificacion_Cuenta.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Finanzas\\ayudas\\Ayuda_Mantenimiento_Clasificacion_Cuenta.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\ayuda\\Ayuda_Mantenimiento_Clasificacion_Cuenta.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no fue encontrada");

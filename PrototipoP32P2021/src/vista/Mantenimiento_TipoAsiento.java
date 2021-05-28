@@ -307,10 +307,10 @@ public class Mantenimiento_TipoAsiento extends javax.swing.JInternalFrame {
 
     private void BtnAyuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAyuActionPerformed
         try {
-            if ((new File("src\\main\\java\\Finanzas\\ayudas\\AyudaMantenimientoTipoAsiento.chm")).exists()) {
+            if ((new File("src\\ayuda\\AyudaMantenimientoTipoAsiento.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\Finanzas\\ayudas\\AyudaMantenimientoTipoAsiento.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\ayuda\\AyudaMantenimientoTipoAsiento.chm");
                 p.waitFor();
             } else {
                 JOptionPane.showMessageDialog(null, "La ayuda no Fue encontrada");
